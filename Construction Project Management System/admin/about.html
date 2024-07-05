@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <!-- for FF, Chrome, Opera -->
+ <link rel="icon" type="image/png" href="img/man.png" sizes="16x16">
+ <link rel="icon" type="image/png" href="img/man.png" sizes="32x32">
+
+ <!-- for IE -->
+ <link rel="icon" type="image/x-icon" href="img/man.ico" >
+ <link rel="shortcut icon" type="image/x-icon" href="man.ico"/>
+
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Construction Management System</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<section class="sub-header">
+		<nav>
+			<div class="logo">
+			<p >SEAS</p>
+			</div>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="services.html">SERVICES</a></li>
+					<li><a href="project.php">PROJECTS</a></li>
+					<li><a href="contact.php">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>About Us</h1>
+	</section>
+
+<!------ about us content ------>
+
+<section class="about-us">
+	<div class="row">
+		<div class="about-col">
+			<h2>Dedication, experience and a passion for perfection.</h2>
+			<p>At SEAS Constructions, we put an emphasis on YOU and the goals YOU have. We take great delight in building enduring relationships since they enable us to grow and prosper.
+			Many of our clients have a history of working with us on several projects because we like to collaborate closely with people who have similar goals and beliefs. In the neighborhood, exceeding customer expectations has led to ongoing repeat business, indicating that we are laying the groundwork not only for our company but also for our community. </p>
+		</div>
+		<div class="about-col">
+			<img src="images/about1.png">
+		</div>
+	</div>
+</section>
+
+<!------ Footer ------>
+
+<section class="footer">
+	<p>Copyright © SEAS Construction 2022</p>
+</section>
+
+<!----------JavaScript for Toggle Menu---->
+	<script>
+		var navLinks = document.getElementById('navLinks');
+
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+
+	</script>
+</body>
+</html>
